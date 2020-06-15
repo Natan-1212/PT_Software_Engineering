@@ -9,7 +9,7 @@
 
 ////////Easy Goinng ////////
 
-for(let i = 1; i <= 20; i++){
+/*for(let i = 1; i <= 20; i++){
     console.log(i);
 } 
 
@@ -112,7 +112,7 @@ console.log(favMovies.slice(9));// deviding the lists of the array after the hal
 
 ////////// Where is Waldo?///////////////////////////
 
-const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+/*const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
                     ["Lucinda", "Jacc", "Neff", "Snoop"],
                     ["Petunia", ["Baked Goods", "Waldo"]]];
 console.log(whereIsWaldo.indexOf("Eggbert"));
@@ -157,7 +157,7 @@ if (numsSorted.length % 2 === 1) {
 
 ////////////Return of the Closets /////////////////
  
-const kristynsCloset = [
+/*const kristynsCloset = [
     "left shoe",
     "cowboy boots",
     "right sock",
@@ -206,7 +206,12 @@ const kristynsCloset = [
 
 for (i = 0; i < thomsCloset.length; i++) {
     console.log(thomsCloset[i]);
-}
+}*/
+const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18,12, 17, 12, 71, 18, 15, 12];
+const sortedNums = nums.sort();
+let median = sortedNums.length/2;
+median = Math.floor(median);
+console.log(sortedNums[median]);
 
 
 
