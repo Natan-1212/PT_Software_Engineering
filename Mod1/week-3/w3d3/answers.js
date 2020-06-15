@@ -157,4 +157,25 @@ console.log(bondTitles);*/
     }
   
     console.log(revenue());*/
+
+    ////////Hungry for More?///////////////////////
     
+/*const bondActor = [];
+let current = 0;
+let count = 0;
+for (let i = 0; i < bondFilms.length; i ++) {
+    bondActor.push(bondFilms[i]['actor']);
+}
+bondActor.sort();
+console.log(bondActor);
+
+for (let i = 0; i < bondActor.length; i ++) {
+    if (count > 0) {
+    }
+}
+console.log(bondActor);///Able to list names of actors in each actors section of the 
+the data elament but stack at identifying the number of  frequency or occurenceses of the actors 
+and hence unable to identify an actor who is the list starred number.*/ 
+
+
+
