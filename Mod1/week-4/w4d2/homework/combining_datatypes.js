@@ -47,4 +47,37 @@ the inner array should be the names of the tenants. Log one of the elements of t
 let apartmentBuilding = [
     namesOfTenants = ['Natan', 'Motasam', 'Angel','Jose', 'Hector']
 ];
-console.log(apartmentBuilding[0][0]); // result=success => Natan */
+console.log(apartmentBuilding[0][0]); // result=success => Natan 
+
+
+////Combine objects, arrays, and functions more than one level deep/////
+
+1-Create a function knit that returns an object that has the following kinds of properties item:
+ scarf, size : 6ft etc. Log a value of that object (hint: call the function and then call a property 
+on the return value).
+
+const knit = () =>{
+    knitObject = {
+        item: 'scarf',
+        size: '6ft'
+    }
+    return knitObject;
+}
+console.log(knit(1).item);//// result= success =>scarf
+
+2-Create a function crayonSelector that returns an object that 
+has an array (you can reuse your crayonBox object). Log one of the elements of 
+that array.
+
+const crayonSelector= (color) => {
+    const crayonBox = {
+        colors: ['red','green','blue','yellow','black']
+    };
+    return crayonBox.colors[color];
+}; 
+console.log(crayonSelector(3));// result = success =>yellow 
+const powerButton = (Option) =>{
+console.log("select a song");
+}
+powerButton(); // result= success => select a song */ 
+
