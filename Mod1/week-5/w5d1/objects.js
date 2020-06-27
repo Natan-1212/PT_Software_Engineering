@@ -17,8 +17,8 @@ class Hamster {
         return this.price;
     }
 }
-const natan = new Hamster("Linda","Natan");
-console.log(natan.getPrice());
+//const natan = new Hamster("Linda","Natan");
+//console.log(natan.getPrice());
 
 /////Person///////
 
@@ -46,7 +46,7 @@ class Person {
     }
 
     greet() {
-        console.log("So good to see you, " + this.name);
+        console.log("How awesome to see you!," + this.name);
     }
 
     eat() {
@@ -68,9 +68,47 @@ class Person {
     buyHamster(name) {
         this.hamster.push(new Hamster(name));
         this.mood +=10;
-        this.bankAccount = this.bankAccount - this.hamster.getPrice();
+       // this.bankAccount = this.bankAccount - this.hamster.getPrice();
     }
 }
+////Create a Story with your Person class/////
+//1-Instantiate a new Person named Timmy
+const timmy = new Person ('Timmy');
+//console.log(timmy);
+
+//2-Age Timmy five years
+//timmy.age(5);
+//console.log(timmy);
+
+//3-Have him eat five times.
+timmy.eat(5);  
+//console.log(timmy); 
+
+//4-Have him exercise five times
+timmy.exercise(5);
+//console.log(timmy);
 
 
+//5-age timmy 9 years
+timmy.ageUp(9);
+//console.log(timmy);
 
+//6-8Create a hamster named "Gus" and buy Gus
+const gus = new Hamster('Timmy', 'Gus');
+timmy.buyHamster(gus);
+//console.log(timmy);
+
+//9-age timmy 15 yrs
+timmy.ageUp(15);
+//console.log(timmy);
+
+//10-Have Timmy eat twice
+timmy.eat(2);
+
+
+//11-Have Timmy eat twice
+timmy.exercise(2);
+
+//Testing the object Timmy provides a working function when i used it without 
+//timmy.age(2nd) part otherwise it is provides me an error saying "timmy.age is not a function"
+console.log(timmy);
