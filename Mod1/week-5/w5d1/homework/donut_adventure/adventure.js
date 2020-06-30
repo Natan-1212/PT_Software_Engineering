@@ -33,6 +33,8 @@ class Hero {
 const dougie = new Hero("Dougie the Donut", 100);
 console.log(dougie);
 
+//Creating Enemy Class
+
 class Enemy {
     constructor(name, health = 100) {
         this.name = name;
@@ -57,6 +59,9 @@ class Enemy {
         console.log('i\'m gonna flatten you like a slice of pepperoni!');
     }
 }
-
+//Using this Enemy class, create an instance of the enemy Pizza Rat
 const pizzaRat = new Enemy("Pizza Rat", 0);
 console.log(pizzaRat);
+
+
+//Walking Down the Street /But the fight part is where i am having the issue
