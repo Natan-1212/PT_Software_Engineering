@@ -1,4 +1,4 @@
-console.log("LINKED");
+console.log("Journey to Adventure!");
 
 // Dramatis Personae
 const hobbits = [
@@ -42,8 +42,10 @@ const makeMiddleEarth = () => {
   // console.log("Trying to make middle earth.");
 
   // 1. create a section tag with an id of middle-earth
+  const $section = $("<section>").attr("id", "middle-earth");
 
   // 2. append the section to the body of the DOM.
+  $("body").append($section);
 
   // 3. use a for loop to iterate over the lands array that does the following:
 
@@ -54,6 +56,13 @@ const makeMiddleEarth = () => {
   //   3c. includes an h1 with the name of the land inside each land article
 
   //   3d. appends each land to the middle-earth section
+  for (let i = 0; i < lands.length; i++) {
+    console.log(lands[i]);
+    const $lands = $("<article>").attr("id", lands[i]);
+    const $h1 = $("<h1>").text(lands[i]);
+    $section.append($lands);
+    $lands.append($h1);
+  }
 
 };
 
