@@ -233,8 +233,16 @@ const forgeTheFellowShip = () => {
 const theBalrog = () => {
 
   // 1. change the 'Gandalf' text to 'Gandalf the White'
+  $("#the-fellowship")
+    .children()
+    .eq(5)
+    .text("Ganfalf the White");
 
   // 2. add a class "the-white" to this element
+  $("#the-fellowship")
+    .children()
+    .eq(5)
+    .addClass("the-white");
 
   // 3. in the style.css file, add a css rule to make elements of the class "the-white" have a white background and a grey border
 
