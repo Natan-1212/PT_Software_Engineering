@@ -52,3 +52,73 @@ $('ul').append('<li>leash</li>')
 $('ul').append('<li>Bertie Botts Every Flavor [Jelly] Beans.</li>')
 
 console.log($li)
+
+
+/////////////YEAR FOUR////////
+
+/*<table>
+     <thead>
+//         <tr>
+//             <th colspan="2">The table header</th>
+//         </tr>
+//     </thead>
+//     <tbody>
+//         <tr>
+//             <td>The table body</td>
+//             <td>with two columns</td>
+//         </tr>
+//     </tbody>
+//     <tfoot>
+//         <tr>
+//             <td colspan="2">The table footer</td>
+//         </tr>
+//     </tfoot>
+// </table> */
+
+// Right above your table add an h5 that says 'Spring 2017'
+const $h5 = $('<h5/>')
+$('#container').append('<h5>Spring 2017</h5>')
+const $table = $('<table/>')
+$('#container').append('<table></table>')
+$('table').append('<thead></thead>')
+//Inside the table add a thead element
+const $th1 = $('<th/>')
+$('thead').append('<th>Day</th>')
+const $th2 = $('<th/>')
+$('thead').append('<th>Classes</th>')
+$('thead').append('<tr/>')
+// Inside the thead element add two th elements
+const $td1 = $('<td/>')
+$('tr').append('<td>Monday</td>')
+const $td2 = $('<td/>')
+$('tr').append('<td>Herbology, Divination, Potions.')
+
+
+// $('thead').append('</tr>')
+const $td3 = $('<td/>')
+$('tr').append('<td>Tuesday</td>')
+const $td4 = $('<td/>')
+$('tr').append('<td>Defense Against the Dark Arts, Quidditch practice')
+
+
+// $('thead').append('</tr>')
+const $td5 = $('<td/>')
+$('tr').append('<td>Wednesday</td>')
+const $td6 = $('<td/>')
+$('tr').append('<td>History of Magic.')
+
+
+// $('thead').append('</tr>')
+const $td7 = $('<td/>')
+$('tr').append('<td>Thursday</td>')
+const $td8 = $('<td/>')
+$('tr').append('<td> Herbology, Divination, Potions.')
+
+
+// $('thead').append('</tr>')
+const $td9 = $('<td/>')
+$('tr').append('<td>Friday</td>')
+const $td10 = $('<td/>')
+$('tr').append('<td>Defense Against the Dark Arts, Quidditch practice')
+
+

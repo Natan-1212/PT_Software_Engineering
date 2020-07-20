@@ -10,3 +10,13 @@ body {
 ul {
     list-style: none;
 }
+table,th,td {
+	border: 1px solid gray;
+}
+table {
+	margin-left: auto
+    margin-right: auto;
+    display: table;
+     
+    
+} 
