@@ -1,4 +1,6 @@
 body {
-    background-color: #F8F7FF;
-    text-align: center;
+	text-align: center;
 }
+.dog {
+	font-family: fantasy;
+} 
