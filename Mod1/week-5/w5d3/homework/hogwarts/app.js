@@ -122,3 +122,33 @@ const $td10 = $('<td/>')
 $('tr').append('<td>Defense Against the Dark Arts, Quidditch practice')
 
 
+///////////YEAR FIVE ///////////////
+
+// Break your wand! (select the element that contains your wand and remove it)
+$('.wand').remove()
+//Class was hard! Drink all your butter beer! (remove just the butter beer from your list)
+$('li').first().remove();
+//Get a new wand (add the same element back with new text describing your new wand. Be sure to insert it after your pet in the DOM)
+// const $h4newWand = $('<h4/>')
+$('h4').after('<h4>Wand of Destruction</h4>')
+$('h4:last').addClass('newWand')
+// $('h4:last')
+// $('$h4newWand').last()
+// $("h4").last().addClass('newWand');
+//having some trouble with classes
+
+// Make your new wand stand out by adding a color of indigo (or whatever color you like). But do it with magic (jQuery): Don't add this css in your style.css file
+
+$('.newWand').css('color','indigo')
+
+// Send your pet on a spy mission (remove your pet from the DOM, put it somewhere else in your HTML). Make sure your pet's leash stays in your trunk (list item with the same class as your pet inside unordered list)
+let clone = $(".dog").clone(); // making zeh' clones!
+$(".dog").remove();            // original is gone
+//Theodore went to the Forbidden Forest
+
+// Have your pet come back (remove your pet from the DOM, put it back in its original location)
+
+$("h3").append(clone); 
+//he back....or is he
+
+
